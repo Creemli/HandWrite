@@ -1,19 +1,19 @@
-# 诊断并输出日志到控制台
+# 诊断并输出日志到控制台[原文]https://developers.google.com/web/tools/chrome-devtools/console/console-write
 
-    * 控制台日志是一个非常强大的检查页面或者应用的方式，让我们用console.log 开始，然后探索一些更高级的使用
+* 控制台日志是一个非常强大的检查页面或者应用的方式，让我们用console.log 开始，然后探索一些更高级的使用
 
 ## 主要由以下几点
 
-    * console.log
-    * console.error console.warn, console.info
-    * console.group console.groupEnd (将相关的信息分组，避免杂乱)
-    * console.assert  显示条件型报错信息
+* console.log
+* console.error console.warn, console.info
+* console.group console.groupEnd (将相关的信息分组，避免杂乱)
+* console.assert  显示条件型报错信息
 
 
 ### 输出到控制台
 
-    * 使用 console.log() 方法来打印一些基本信息。 这个方法可以接受多个参数或者表达式，然后以空格分隔的形式连接多个参数打印到控制台。
-    * 执行以下代码：
+* 使用 console.log() 方法来打印一些基本信息。 这个方法可以接受多个参数或者表达式，然后以空格分隔的形式连接多个参数打印到控制台。
+* 执行以下代码：
 
 ```javascript
 console.log("Node count:", a.childNodes.length, "and the current time is:", Date.now());
@@ -72,16 +72,16 @@ console.log("A group-less log trace.");
 
 ### 报错和警告
 
-    * 报错和警告信息和普通的Log是一样的， 只是他们有不同的样式来引起你的注意。
+* 报错和警告信息和普通的Log是一样的， 只是他们有不同的样式来引起你的注意。
  
-    * 错误 会在显示的时候在左侧有个红色的图标，并且文字为红色的
-    * 警告会在显示的左侧有一个黄色的⚠️图标。
+* 错误 会在显示的时候在左侧有个红色的图标，并且文字为红色的
+* 警告会在显示的左侧有一个黄色的⚠️图标。
 
 ### 断言
 
-    * console.assert() 方法会在第一个参数结果为 false的时候显示一个报错提示的字符串
+* console.assert() 方法会在第一个参数结果为 false的时候显示一个报错提示的字符串
 
-    * 一个简单的例子
+* 一个简单的例子
 ```javascript
 console.assert(list.childNodes.length < 500, "Node count is > 500");
 ```
@@ -90,16 +90,16 @@ console.assert(list.childNodes.length < 500, "Node count is > 500");
 
 ### 字符串替换和格式化
 
-    * console.log() 第一个参数可以接受包含一个或者多个占位符(说明符？)的字符串，占位符一般的格式是 % 加上一个表明其格式的英文字母。 后面的参数会在输出的时候会按照顺序替换占位符。
+* console.log() 第一个参数可以接受包含一个或者多个占位符(说明符？)的字符串，占位符一般的格式是 % 加上一个表明其格式的英文字母。 后面的参数会在输出的时候会按照顺序替换占位符。
 
-    * 简单的一个例子： 
+* 简单的一个例子： 
 
 ```javascript
 
 console.log("%s has %d points", "Sam", 100);
 ```
 
-    * 占位符有以下几种：
+* 占位符有以下几种：
 
 | Specifier |  Output|
 | ---------- | :---------:|
@@ -117,7 +117,7 @@ console.log("Node count: %d, and the time is %f.", document.childNodes.length, D
 
 ### 用css美化控制台输出
 
-    - css 说明符允许你自定义控制台的输出。把你要输出的字符串开始处增加css说明符，然后把你想要的样式当做第二个参数传递进去。
+* css 说明符允许你自定义控制台的输出。把你要输出的字符串开始处增加css说明符，然后把你想要的样式当做第二个参数传递进去。
 
 ```javascript
 console.log("%cThis will be formatted with large, blue text", "color: blue; font-size: x-large");
@@ -130,7 +130,13 @@ console.log('%c ', 'background: url("https://github.com/fluidicon.png");backgrou
 
 ```
 
-![]https://developers.google.com/web/tools/chrome-devtools/console/images/console-write-format-string.png
+<img src="https://developers.google.com/web/tools/chrome-devtools/console/images/console-write-format-string.png" />
+
+
+
+
+
+<small>上次更新日期： 十二月 21, 2016</small>
 
 
 ### 把DOM元素格式化为JS 对象
