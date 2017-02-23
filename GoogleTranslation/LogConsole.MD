@@ -1,4 +1,4 @@
-# 诊断并输出日志到控制台[原文]https://developers.google.com/web/tools/chrome-devtools/console/console-write
+# 诊断并输出日志到控制台<a src="https://developers.google.com/web/tools/chrome-devtools/console/console-write" />原文</a>
 
 * 控制台日志是一个非常强大的检查页面或者应用的方式，让我们用console.log 开始，然后探索一些更高级的使用
 
@@ -134,12 +134,11 @@ console.log('%c ', 'background: url("https://github.com/fluidicon.png");backgrou
 
 
 
-
-
-<small>上次更新日期： 十二月 21, 2016</small>
-
-
 ### 把DOM元素格式化为JS 对象
 
     - 一般情况下， Dom元素在输出的时候会显示的是整个的HTML字符串。 如果你想要查看Dom对象以及他的属性properties， 你就需要 %o 说明符， 或者使用console.dir 。
-    ![]https://developers.google.com/web/tools/chrome-devtools/console/images/dir-element.png
+    <img src="https://developers.google.com/web/tools/chrome-devtools/console/images/dir-element.png" />
+
+
+
+<small>上次更新日期： 十二月 21, 2016</small>
